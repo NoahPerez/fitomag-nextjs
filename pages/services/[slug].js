@@ -6,14 +6,14 @@ import Cta from "@/components/Common/Cta";
 import Footer from "@/components/Layout/Footer/Footer";
 import baseApiUrl from "@/utils/baseApiUrl";
 
-const ServicesDetails = ({ service: { data } }) => {
+const ServicesDetails = ({ service }) => {
   return (
     <>
       <NavbarStyle2 />
 
-      <PageBanner title={data[0].attributes.title} homeText="Home" homeUrl="/" />
+      <PageBanner title={service.attributes.title} homeText="Home" homeUrl="/" />
 
-      <ServiceDetailsContent {...data[0]} />
+      <ServiceDetailsContent {...service} />
 
       <Cta />
 
@@ -23,31 +23,47 @@ const ServicesDetails = ({ service: { data } }) => {
 };
 
 export async function getStaticPaths() {
-  const res = await fetch(`${baseApiUrl}/api/services`);
-  const { data } = await res.json();
-  // console.log(data);
-  const paths = data.map((service) => ({
-    params: { slug: service.attributes.slug },
-  }));
+  try {
+    const res = await fetch(`${baseApiUrl}/api/services`);
+    const { data } = await res.json();
 
-  return { paths, fallback: false };
+    if (!Array.isArray(data)) {
+      throw new Error("Invalid data format");
+    }
+
+    const paths = data.map((service) => ({
+      params: { slug: service.attributes.slug },
+    }));
+
+    return { paths, fallback: false };
+  } catch (error) {
+    console.error("Error fetching service paths:", error);
+    return { paths: [], fallback: false };
+  }
 }
 
 export async function getStaticProps({ params }) {
-  // console.log(params);
-  // Call an external API endpoint to get products.
-  // You can use any data fetching library
-  const res = await fetch(
-    `${baseApiUrl}/api/services?filters[slug][$eq]=${params.slug}&populate=*`
-  );
-  const service = await res.json();
-  // By returning { props: { service } }, the Blog component
-  // will receive `service` as a prop at build time
-  return {
-    props: {
-      service,
-    },
-  };
+  try {
+    const res = await fetch(
+      `${baseApiUrl}/api/services?filters[slug][$eq]=${params.slug}&populate=*`
+    );
+    const { data } = await res.json();
+
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("Invalid service data format");
+    }
+
+    const service = data[0];
+
+    return {
+      props: {
+        service,
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching service details:", error);
+    return { props: { service: null } };
+  }
 }
 
 export default ServicesDetails;

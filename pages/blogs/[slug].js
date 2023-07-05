@@ -5,14 +5,14 @@ import BlogDetailsContent from "@/components/Blog/BlogDetailsContent";
 import Footer from "@/components/Layout/Footer/Footer";
 import baseApiUrl from "@/utils/baseApiUrl";
 
-const BlogDetails = ({ blogs: { data } }) => {
+const BlogDetails = ({ blog }) => {
   return (
     <>
       <NavbarStyle2 />
 
-      <PageBanner title={data[0].attributes.title} homeText="Home" homeUrl="/" />
+      <PageBanner title={blog.attributes.title} homeText="Home" homeUrl="/" />
 
-      <BlogDetailsContent {...data[0]} />
+      <BlogDetailsContent {...blog} />
 
       <Footer />
     </>
@@ -44,16 +44,22 @@ export async function getStaticProps({ params }) {
     const res = await fetch(
       `${baseApiUrl}/api/blogs?filters[slug][$eq]=${params.slug}&populate=*`
     );
-    const blogs = await res.json();
+    const { data } = await res.json();
+
+    if (!Array.isArray(data) || data.length === 0) {
+      throw new Error("Invalid blog data format");
+    }
+
+    const blog = data[0];
 
     return {
       props: {
-        blogs,
+        blog,
       },
     };
   } catch (error) {
     console.error("Error fetching blog details:", error);
-    return { props: { blogs: null } };
+    return { props: { blog: null } };
   }
 }
 
