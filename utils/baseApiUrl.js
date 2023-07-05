@@ -1,5 +1,5 @@
 const baseApiUrl = process.env.NODE_ENV === "production" 
-? 'http://localhost:1337' 
+? 'https://site--strapi--bb82cjkgcb9b.code.run' 
 : 'http://localhost:1337';
 
 export default baseApiUrl;
