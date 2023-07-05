@@ -1,0 +1,1956 @@
+// Responsive CSS
+@media only screen and (max-width: 767px) {
+    // Default CSS
+    body {
+        font-size: 15px;
+    }
+    .ptb-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    .pb-75 {
+        padding-bottom: 25px;
+    }
+    .default-btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    .optional-btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    // Section Title CSS
+    .section-title {
+        span {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+    .section-title-wrap {
+        span {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        .default-btn {
+            display: none;
+        }
+    }
+
+    // Main Banner Area CSS
+    .main-banner-area {
+        padding-top: 110px;
+        padding-bottom: 50px;
+
+        &::before {
+            display: none;
+        }
+        .container-fluid {
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            max-width: 540px;
+        }
+    }
+    .main-banner-content {
+        span {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .banner-btn {
+            margin-top: 20px;
+        }
+    }
+    .main-banner-image-slides {
+        margin-top: 30px;
+    }
+    .main-banner-shape-1 {
+        display: none;
+    }
+    .main-banner-shape-2 {
+        display: none;
+    }
+    .main-banner-bg-text {
+        display: none;
+    }
+    .main-banner-wrap-content {
+        span {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .banner-btn {
+            margin-top: 20px;
+        }
+    }
+    .main-banner-wrap-image {
+        margin-top: 30px;
+        text-align: center;
+
+        .banner-wrap-shape-1 {
+            display: none;
+        }
+        .banner-wrap-shape-2 {
+            display: none;
+        }
+    }
+
+    // Main Hero Area CSS
+    .main-hero-area {
+        padding-top: 140px;
+        padding-bottom: 70px;
+        position: relative;
+        z-index: 1;
+
+        .container-fluid {
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            max-width: 540px;
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #000000;
+            opacity: .50;
+            z-index: -1;
+        }
+    }
+    .main-hero-content {
+        span {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .hero-btn {
+            margin-top: 25px;
+
+            li {
+                margin-right: 10px;
+            }
+        }
+    }
+    .main-hero-shape-1 {
+        display: none;
+    }
+    .main-hero-shape-2 {
+        display: none;
+    }
+
+    // Features Area CSS
+    .single-features-card {
+        h3 {
+            font-size: 20px;
+        }
+        .features-list {
+            li {
+                font-size: 15px;
+            }
+        }
+    }
+    .features-shape-1 {
+        display: none;
+    }
+
+    // About Area CSS
+    .about-image {
+        margin-bottom: 30px;
+        text-align: center;
+
+        .about-shape-1 {
+            display: none;
+        }
+    }
+    .about-content {
+        margin-left: 0;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .about-shape-2 {
+        display: none;
+    }
+    .about-image-wrap {
+        padding-right: 0;
+        padding-bottom: 0;
+        text-align: center;
+        margin-bottom: 30px;
+
+        img {
+            &:nth-child(2) {
+                max-width: 200px;
+            }
+        }
+        .about-shape-3 {
+            display: none;
+        }
+    }
+
+    // Services Area CSS
+    .single-services-card {
+        padding: 20px;
+
+        .icon {
+            i {
+                height: 55px;
+                width: 55px;
+                line-height: 55px;
+                font-size: 25px;
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .single-services-box {
+        padding: 20px;
+
+        .icon {
+            i {
+                height: 55px;
+                width: 55px;
+                line-height: 55px;
+                font-size: 25px;
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    // Funfact Area CSS 
+    .single-funfact-card {
+        padding-left: 0;
+        text-align: center;
+
+        &::before {
+            display: none;
+        }
+        h3 {
+            font-size: 30px;
+            position: initial;
+            line-height: 1.2;
+            transform: initial;
+          
+            .small-text {
+                font-size: 25px;
+            }
+        }
+        p {
+            br {
+                display: none;
+            }
+        }
+    }
+    .fun-fact-shape-1 {
+        display: none;
+    }
+    .single-funfact-box {
+        padding: 25px;
+
+        .icon {
+            i {
+                font-size: 30px;
+            }
+        }
+        h3 {
+            font-size: 30px;
+
+            .small-text {
+                font-size: 30px;
+                left: -2px;
+            }
+        }
+    }
+
+    // Why Choose Us Area CSS
+    .why-choose-us-content {
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        .choose-us-inner-box {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+        }
+        &.wrap-color {
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .inner-box-content {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+    .why-choose-us-image {
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+
+        &::before {
+            display: none;
+        }
+        .why-choose-us-shape-1 {
+            display: none;
+        }
+    }
+    .why-choose-us-video-view {
+        .video-btn {
+            width: 70px;
+            height: 70px;
+            line-height: 80px;
+            font-size: 30px;
+
+            &::before {
+                animation: unset;
+            }
+        }
+    }
+    .why-choose-us-area-with-video {
+        &::before {
+            display: none;
+        }
+    }
+
+    // Testimonials Area CSS
+    .single-testimonials-box {
+        .icon {
+            i {
+                font-size: 35px;
+            }
+        }
+        p {
+            font-size: var(--font-size);
+        }
+        .info {
+            img {
+                max-width: 55px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .testimonials-box-content {
+        margin-bottom: 25px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+    .testimonials-shape-1 {
+        display: none;
+    }
+    .single-testimonials-card {
+        .info {
+            img {
+                max-width: 60px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Expertise Area CSS
+    .expertise-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .expertise-image {
+        margin-bottom: 30px;
+        text-align: center;
+
+        .expertise-shape-1 {
+            display: none;
+        }
+        .expertise-shape-2 {
+            display: none;
+        }
+    }
+    .expertise-content {
+        margin-top: 0;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        .expertise-inner-box {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+    .expertise-image-wrap {
+        margin-top: 30px;
+        text-align: center;
+
+        .expertise-shape-2 {
+            display: none;
+        }  
+        &.top-zero {
+            margin-top: 0;
+            margin-bottom: 30px;
+        }  
+    }
+
+    // Blog Area CSS
+    .single-blog-card {
+        .blog-content {
+            span {
+                font-size: 14px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            .entry-meta {
+                li {
+                    font-size: 14px;
+                }
+            }
+            &.with-padding {
+                padding: 20px;
+            }
+        }
+    }
+
+    // Team Area CSS
+    .team-area-with-color {
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+    .team-box-content {
+        margin-bottom: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .team-shape-1 {
+        display: none;
+    }
+    .single-team-card {
+        .team-content {
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .single-team-item  {
+        .team-content {
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Pricing Area CSS
+    .single-pricing-table {
+        padding: 20px;
+        .pricing-header {
+            h3 {
+                font-size: 20px;
+            }
+        }
+        .price {
+            font-size: 40px;
+        }
+    }
+
+    // FAQ Area CSS
+    .faq-content {
+        margin-bottom: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+    }
+    .faq-accordion {
+        .accordion-item {
+            .accordion-button {
+                font-size: var(--font-size);
+            }
+        }
+        &.with-top {
+            margin-top: 25px;
+        }
+    }
+
+    // Page Banner Area CSS
+    .page-banner-content {
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .page-banner-image {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    // Working Process Area CSS
+    .working-process-line {
+        display: none;
+    }
+    .single-working-process-card {
+        .number {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: var(--font-size);
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    // Services Details Area CSS
+    .services-details-content {
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 23px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        h5 {
+            font-size: 18px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+    }
+  
+    // Widget Area CSS
+    .widget-area {
+        margin-left: 0;
+        margin-top: 30px;
+
+        .widget {
+            .widget-title {
+                font-size: 18px;
+            }
+        }
+        .widget_posts_thumb {
+            .item {
+                .info {
+                    .title {
+                        font-size: var(--font-size);
+                    }
+                }
+            }
+        }
+    }
+
+    // Login Area CSS
+    .login-form {
+        padding: 25px 20px;
+
+        h2 {
+            font-size: 20px;
+        }
+        form {
+            .lost-your-password-wrap {
+                text-align: start;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    // Register Area CSS
+    .register-form {
+        padding: 25px 20px;
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    // Forgot Password Area CSS
+    .forgot-password-form {
+        padding: 25px 20px;
+
+        h2 {
+            font-size: 20px;
+        }
+    }
+
+    // Terms of Service Area CSS
+    .terms-of-service-content {
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 15px;
+        }
+    }
+
+    // Privacy Policy Area CSS
+    .privacy-policy-content {
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        h4 {
+            font-size: 18px;
+        }
+        h5 {
+            font-size: 16px;
+        }
+        h6 {
+            font-size: 15px;
+        }
+    }
+
+    // 404 Error Area CSS
+    .error-content {
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    // Coming Soon Area CSS
+    .coming-soon-area {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .coming-soon-content {
+        padding: 30px 25px;
+
+        #timer {
+            margin-top: 20px;
+
+            div {
+                width: 100px;
+                height: 105px;
+                margin-left: 5px;
+                margin-right: 5px;
+                font-size: 20px;
+                margin-top: 10px;
+            }
+        }
+        h2 {
+            font-size: 22px;
+        }
+    }
+
+    // Case Study Details Area CSS
+    .case-study-details-desc {
+        .case-study-details-header {
+            h3 {
+                font-size: 20px;
+            }
+            .case-study-information {
+                margin-top: 25px;
+            }
+        }
+        .case-study-details-content {
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 17px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+        }
+        .blocks-case-study-item {
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    // Blog Details Area CSS
+    .blog-details-desc {
+        .article-content {
+            h1 {
+                font-size: 22px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 20px;
+            }
+            h5 {
+                font-size: 20px;
+            }
+
+            .quote-content {
+                padding: 20px;
+
+                i {
+                    position: relative;
+                    left: 0;
+                    top: unset;
+                    transform: unset;
+                }
+            }
+        }
+        .article-leave-comment {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .single-case-study-card {
+        &::before {
+            opacity: 0.7;
+            visibility: visible;
+        }
+        .case-study-content {
+            margin-top: 0;
+            opacity: 1;
+            visibility: visible;
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .testimonials-slides {
+        .swiper-button-next, .swiper-button-prev {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            top: 36px;
+            &::after {
+                font-size: 20px;
+            }
+        }
+    }
+    .cta-area {
+        .cta-content {
+            h3 {
+                font-size: 40px;
+            }
+        }
+    }
+
+    .main-banner-wrap-area {
+        padding-top: 140px;
+        padding-bottom: 60px;
+    }
+
+    .page-banner-area {
+        padding-top: 115px;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    // Login Area CSS
+    .login-form {
+        form {
+            .lost-your-password-wrap {
+                text-align: end;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    // Default CSS
+    .ptb-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    .pb-75 {
+        padding-bottom: 25px;
+    }
+    .default-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    .optional-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    // Section Title CSS
+    .section-title {
+        span {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+    }
+    .section-title-wrap {
+        span {
+            font-size: 14px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .default-btn {
+            display: none;
+        }
+    }
+
+    // Main Banner Area CSS
+    .main-banner-area {
+        padding-top: 110px;
+        padding-bottom: 50px;
+
+        &::before {
+            display: none;
+        }
+        .container-fluid {
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            max-width: 720px;
+        }
+    }
+    .main-banner-content {
+        span {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        .banner-btn {
+            margin-top: 20px;
+        }
+    }
+    .main-banner-image-slides {
+        margin-top: 30px;
+    }
+    .main-banner-shape-1 {
+        display: none;
+    }
+    .main-banner-shape-2 {
+        display: none;
+    }
+    .main-banner-bg-text {
+        display: none;
+    }
+    .main-banner-wrap-content {
+        span {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 35px;
+        }
+        .banner-btn {
+            margin-top: 20px;
+        }
+    }
+    .main-banner-wrap-image {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    // Main Hero Area CSS
+    .main-hero-area {
+        .container-fluid {
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            max-width: 720px;
+        }
+    }
+    .main-hero-content {
+        max-width: 450px;
+        span {
+            font-size: 14px;
+        }
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    // Features Area CSS
+    .single-features-card {
+        h3 {
+            font-size: 22px;
+        }
+        .features-list {
+            li {
+                font-size: 15px;
+            }
+        }
+    }
+    .features-shape-1 {
+        display: none;
+    }
+
+    // About Area CSS
+    .about-image {
+        margin-bottom: 30px;
+        text-align: center;
+
+        .about-shape-1 {
+            display: none;
+        }
+    }
+    .about-content {
+        margin-left: 0;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+    }
+    .about-shape-2 {
+        display: none;
+    }
+    .about-image-wrap {
+        margin-bottom: 30px;
+    }
+
+    // Services Area CSS
+    .single-services-card {
+        padding: 20px;
+
+        .icon {
+            i {
+                height: 55px;
+                width: 55px;
+                line-height: 55px;
+                font-size: 25px;
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+    .single-services-box {
+        padding: 20px;
+
+        .icon {
+            i {
+                height: 55px;
+                width: 55px;
+                line-height: 55px;
+                font-size: 25px;
+            }
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    // Funfact Area CSS 
+    .single-funfact-card {
+        padding-left: 145px;
+
+        &::before {
+            display: none;
+        }
+        h3 {
+            font-size: 35px;
+
+            .small-text {
+                font-size: 35px;
+
+            }
+        }
+        p {
+            br {
+                display: none;
+            }
+        }
+    }
+    .fun-fact-shape-1 {
+        display: none;
+    }
+    .single-funfact-box {
+        padding: 25px;
+
+        .icon {
+            i {
+                font-size: 30px;
+            }
+        }
+        h3 {
+            font-size: 30px;
+
+            .small-text {
+                font-size: 30px;
+                left: -2px;
+            }
+        }
+    }
+
+    // Why Choose Us Area CSS
+    .why-choose-us-content {
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        .choose-us-inner-box {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+        }
+        &.wrap-color {
+            padding: 35px;
+            margin-top: 35px;
+        }
+        .inner-box-content {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+    .why-choose-us-image {
+        margin-top: 30px;
+
+        .why-choose-us-shape-1 {
+            display: none;
+        }
+    }
+    .why-choose-us-area-with-video {
+        &::before {
+            display: none;
+        }
+    }
+    .why-choose-us-video-view {
+        .video-btn {
+            &::before {
+                animation: unset;
+            }
+        }
+    }
+
+    // Testimonials Area CSS
+    .single-testimonials-box {
+        max-width: 500px;
+
+        .icon {
+            i {
+                font-size: 35px;
+            }
+        }
+        p {
+            font-size: var(--font-size);
+        }
+        .info {
+            img {
+                max-width: 55px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .testimonials-box-content {
+        margin-bottom: 25px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+    }
+    .testimonials-shape-1 {
+        display: none;
+    }
+    .single-testimonials-card {
+        .info {
+            img {
+                max-width: 60px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Expertise Area CSS
+    .expertise-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .expertise-image {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .expertise-content {
+        margin-top: 0;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+        .expertise-inner-box {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+        }
+    }
+    .expertise-image-wrap {
+        margin-top: 30px;
+        text-align: center;
+
+        .expertise-shape-2 {
+            display: none;
+        }     
+        &.top-zero {
+            margin-top: 0;
+            margin-bottom: 30px;
+        } 
+    }
+
+    // Blog Area CSS
+    .single-blog-card {
+        .blog-content {
+            span {
+                font-size: 14px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            .entry-meta {
+                li {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // Team Area CSS
+    .team-area-with-color {
+        .container-fluid {
+            padding-left: 15px;
+            padding-right: 15px;
+            max-width: 720px;
+        }
+    }
+    .team-box-content {
+        margin-bottom: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+    }
+    .team-shape-1 {
+        display: none;
+    }
+    .single-team-card {
+        .team-content {
+            h3 {
+                font-size: 20px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+    .single-team-item {
+        .team-content {
+            h3 {
+                font-size: 20px;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Pricing Area CSS
+    .single-pricing-table {
+        .pricing-header {
+            h3 {
+                font-size: 20px;
+            }
+        }
+        .price {
+            font-size: 40px;
+        }
+    }
+
+    // FAQ Area CSS
+    .faq-content {
+        margin-bottom: 30px;
+
+        span {
+            font-size: 14px;
+        }
+        h3 {
+            font-size: 25px;
+        }
+    }
+    .faq-accordion {
+        .accordion-item {
+            .accordion-button {
+                font-size: var(--font-size);
+            }
+        }
+    }
+
+    // Page Banner Area CSS
+    .page-banner-content {
+        h2 {
+            font-size: 35px;
+        }
+    }
+    .page-banner-image {
+        text-align: start;
+        margin-top: 30px;
+    }
+
+    // Working Process Area CSS
+    .working-process-line {
+        display: none;
+    }
+    .single-working-process-card {
+        .number {
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            font-size: var(--font-size);
+            margin-bottom: 15px;
+        }
+        h3 {
+            font-size: 20px;
+        }
+    }
+
+    // Services Details Area CSS
+    .services-details-content {
+        h1 {
+            font-size: 25px;
+        }
+        h2 {
+            font-size: 23px;
+        }
+        h3 {
+            font-size: 22px;
+        }
+        h4 {
+            font-size: 20px;
+        }
+        h5 {
+            font-size: 18px;
+        }
+        h6 {
+            font-size: 16px;
+        }
+    }
+
+    // Widget Area CSS
+    .widget-area {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    // 404 Error Area CSS
+    .error-content {
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    // Case Study Details Area CSS
+    .case-study-details-desc {
+        .case-study-details-header {
+            h3 {
+                font-size: 25px;
+            }
+            .case-study-information {
+                margin-top: 25px;
+            }
+        }
+        .case-study-details-content {
+            h1 {
+                font-size: 24px;
+            }
+            h2 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 20px;
+            }
+            h4 {
+                font-size: 18px;
+            }
+            h5 {
+                font-size: 17px;
+            }
+            h6 {
+                font-size: 16px;
+            }
+            .case-study-circlechart {
+                .circlechart {
+                    width: 80px;
+                    height: 80px;
+
+                    .circle-chart {
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+        .blocks-case-study-item {
+            h4 {
+                font-size: 22px;
+            }
+        }
+    }
+
+    // Blog Details Area CSS
+    .blog-details-desc {
+        .article-content {
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+            h3 {
+                font-size: 25px;
+            }
+            h4 {
+                font-size: 24px;
+            }
+            h5 {
+                font-size: 23px;
+            }
+            h6 {
+                font-size: 22px;
+            }
+        }
+        .article-leave-comment {
+            h3 {
+                font-size: 25px;
+            }
+        }
+    }
+
+    // Contact Information Area CSS
+    .contact-information-card {
+        margin-bottom: 25px;
+    }
+
+    .cta-area {
+        .cta-content {
+            h3 {
+                font-size: 55px;
+            }
+        }
+    }
+
+    .main-banner-wrap-area {
+        padding-top: 135px;
+        padding-bottom: 70px;
+    }
+
+    .page-banner-area {
+        padding-top: 120px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    // Main Banner Area CSS
+    .main-banner-area {
+        .container-fluid {
+            padding-right: var(--bs-gutter-x,.75rem);
+            padding-left: var(--bs-gutter-x,.75rem);
+            max-width: 960px;
+        }
+        &::before {
+            width: 410px;
+        }
+    }
+    .main-banner-content {
+        h1 {
+            font-size: 65px;
+        }
+    }
+    .main-banner-bg-text {
+        font-size: 155px;
+    }
+    .main-banner-wrap-content {
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    // Main Hero Area CSS
+    .main-hero-content {
+        max-width: 630px;
+
+        h1 {
+            font-size: 60px;
+        }
+    }
+
+    // Features Area CSS
+    .single-features-card {
+        h3 {
+            font-size: 25px;
+        }
+    }
+
+    // About Area CSS
+    .about-content {
+        h3 {
+            font-size: 30px;
+        }
+    }
+    .about-shape-2 {
+        opacity: 30%;
+    }
+
+    // Services Area CSS
+    .single-services-card {
+        padding: 20px;
+
+        h3 {
+            font-size: 22px;
+        }
+    }
+    .single-services-box {
+        padding: 20px;
+
+        h3 {
+            font-size: 22px;
+        }
+    }
+
+    // Funfact Area CSS 
+    .single-funfact-card {
+        padding-left: 120px;
+
+        &::before {
+            display: none;
+        }
+        h3 {
+            font-size: 35px;
+
+            .small-text {
+                font-size: 35px;
+            }
+        }
+        p {
+            br {
+                display: none;
+            }
+        }
+    }
+    .single-funfact-box {
+        padding: 25px;
+
+        .icon {
+            i {
+                font-size: 30px;
+            }
+        }
+        h3 {
+            font-size: 30px;
+
+            .small-text {
+                font-size: 30px;
+                left: -2px;
+            }
+        }
+    }
+
+    // Why Choose Us Area CSS
+    .why-choose-us-content {
+        h3 {
+            font-size: 30px;
+        }
+        &.wrap-color {
+            padding: 30px;
+        }
+        .inner-box-content {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 35px;
+                }
+            }
+            h4 {
+                font-size: 20px;
+            }
+        }
+    }
+    .why-choose-us-image {
+        .why-choose-us-shape-1 {
+            display: none;
+        }
+        &::before {
+            width: 360px;
+        }
+    }
+
+    // Testimonials Area CSS
+    .single-testimonials-box {
+        max-width: 575px;
+    }
+
+    // Expertise Area CSS
+    .expertise-area {
+        padding-top: 50px;
+    }
+    .expertise-content {
+        margin-top: -50px;
+
+        h3 {
+            font-size: 30px;
+        }
+        .expertise-inner-box {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Team Area CSS
+    .team-box-content {
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    // Blog Area CSS
+    .single-blog-card {
+        .blog-content {
+            .entry-meta {
+                li {
+                    font-size: 14px;
+                }
+            }
+            &.with-padding {
+                padding: 20px;
+            }
+        }
+    }
+ 
+    // Working Process Area CSS
+    .working-process-line {
+        width: 770px;
+    }
+
+    // Page Banner Area CSS
+    .page-banner-content {
+        h2 {
+            font-size: 45px;
+        }
+    }
+  
+    // Widget Area CSS
+    .widget-area {
+        margin-left: 0;
+    }
+
+    // Case Study Details Area CSS
+    .case-study-details-desc {
+        .case-study-details-content {
+            .case-study-circlechart {
+                span {
+                    margin-top: 12px;
+                }
+            }
+        }
+    }
+
+    // Blog Details Area CSS
+    .blog-details-desc {
+        .article-content {
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 26px;
+            }
+            h3 {
+                font-size: 25px;
+            }
+            h4 {
+                font-size: 24px;
+            }
+            h5 {
+                font-size: 23px;
+            }
+            h6 {
+                font-size: 22px;
+            }
+        }
+        .article-leave-comment {
+            h3 {
+                font-size: 30px;
+            }
+        }
+    }
+
+    // Contact Information Area CSS
+    .contact-information-card {
+        padding: 15px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+    .single-pricing-table {
+        padding: 20px;
+    }
+    .cta-area {
+        .cta-content {
+            h3 {
+                font-size: 60px;
+            }
+        }
+    }
+
+    .single-team-item {
+        .team-content {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .single-blog-card {
+        .blog-content {
+            h3 {
+                font-size: 20px;
+            }
+        }
+    }
+    .widget-area {
+        .widget_posts_thumb {
+            .item {
+                .info {
+                    .title {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    // Main Banner Area CSS
+    .main-banner-area {
+        &::before {
+            width: 390px;
+        }
+    }
+    .main-banner-content {
+        h1 {
+            font-size: 65px;
+        }
+    }
+    .main-banner-bg-text {
+        font-size: 155px;
+    }
+ 
+    // About Area CSS
+    .about-content {
+        h3 {
+            font-size: 30px;
+        }
+    }
+
+    // Services Area CSS
+    .single-services-card {
+        padding: 20px;
+
+        h3 {
+            font-size: 22px;
+        }
+    }
+
+    // Funfact Area CSS 
+    .single-funfact-card {
+        &::before {
+            display: none;
+        }
+    }
+
+    // Why Choose Us Area CSS
+    .why-choose-us-content {
+        h3 {
+            font-size: 30px;
+        }
+    }
+    .why-choose-us-image {
+        .why-choose-us-shape-1 {
+            display: none;
+        }
+        &::before {
+            width: 360px;
+        }
+    }
+
+    // Expertise Area CSS
+    .expertise-area {
+        padding-top: 50px;
+    }
+    .expertise-content {
+        margin-top: -50px;
+
+        h3 {
+            font-size: 30px;
+        }
+        .expertise-inner-box {
+            padding-left: 45px;
+
+            .icon {
+                i {
+                    font-size: 30px;
+                }
+            }
+            h4 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // Team Area CSS
+    .team-box-content {
+        h3 {
+            font-size: 30px;
+        }
+    }
+ 
+    // Working Process Area CSS
+    .working-process-line {
+        width: 870px;
+    }
+  
+    // Case Study Details Area CSS
+    .case-study-details-desc {
+        .case-study-details-content {
+            .case-study-circlechart {
+                .circlechart {
+                    width: 70px;
+                    height: 70px;
+
+                    .circle-chart {
+                        width: 70px;
+                        height: 70px;
+
+                        .circle-chart__info {
+                            .circle-chart__percent {
+                                font-size: 7px;
+                            }
+                        }
+                    }
+                }
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    // Contact Information Area CSS
+    .contact-information-card {
+        padding: 15px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1550px) {
+    // Main Banner Area CSS
+    .main-banner-area {
+        .container-fluid {
+            max-width: 1900px;
+            padding-left: 100px;
+            padding-right: 0;
+        }
+        &::before {
+            width: 695px;
+        }
+    }
+    .main-banner-bg-text {
+        left: 100px;
+        bottom: -10px;
+        font-size: 350px;
+    }
+
+    // Main Hero Area CSS
+    .main-hero-area {
+        padding-top: 285px;
+        padding-bottom: 200px;
+
+        .container-fluid {
+            max-width: 1900px;
+            padding-left: 100px;
+            padding-right: 0;
+        }
+    }
+    
+    // Coming Soon Area CSS
+    .coming-soon-area {
+        padding-top: 250px;
+        padding-bottom: 250px;
+    }
+}
