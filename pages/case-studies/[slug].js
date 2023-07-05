@@ -26,11 +26,12 @@ export async function getStaticPaths() {
   const res = await fetch(`${baseApiUrl}/api/case-studies`);
   const { data } = await res.json();
   // console.log(data);
-  const paths = data.map((caseStudie) => ({
+  // Ensure data is not null before mapping over it
+  const paths = data && data.map((caseStudie) => ({
     params: { slug: caseStudie.attributes.slug },
   }));
 
-  return { paths, fallback: false };
+  return { paths: paths || [], fallback: false };
 }
 
 export async function getStaticProps({ params }) {
