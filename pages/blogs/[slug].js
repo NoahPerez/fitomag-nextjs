@@ -13,38 +13,48 @@ const BlogDetails = ({ blogs: { data } }) => {
       <PageBanner title={data[0].attributes.title} homeText="Home" homeUrl="/" />
 
       <BlogDetailsContent {...data[0]} />
-  
+
       <Footer />
     </>
   );
 };
 
 export async function getStaticPaths() {
-  const res = await fetch(`${baseApiUrl}/api/blogs`);
-  const { data } = await res.json();
-  // console.log(data);
-  const paths = data.map((blogs) => ({
-    params: { slug: blogs.attributes.slug },
-  }));
+  try {
+    const res = await fetch(`${baseApiUrl}/api/blogs`);
+    const { data } = await res.json();
 
-  return { paths, fallback: false };
+    if (!Array.isArray(data)) {
+      throw new Error("Invalid data format");
+    }
+
+    const paths = data.map((blog) => ({
+      params: { slug: blog.attributes.slug },
+    }));
+
+    return { paths, fallback: false };
+  } catch (error) {
+    console.error("Error fetching blog paths:", error);
+    return { paths: [], fallback: false };
+  }
 }
 
 export async function getStaticProps({ params }) {
-  // console.log(params);
-  // Call an external API endpoint to get products.
-  // You can use any data fetching library
-  const res = await fetch(
-    `${baseApiUrl}/api/blogs?filters[slug][$eq]=${params.slug}&populate=*`
-  );
-  const blogs = await res.json();
-  // By returning { props: { blogs } }, the Blog component
-  // will receive `blogs` as a prop at build time
-  return {
-    props: {
+  try {
+    const res = await fetch(
+      `${baseApiUrl}/api/blogs?filters[slug][$eq]=${params.slug}&populate=*`
+    );
+    const blogs = await res.json();
+
+    return {
+      props: {
         blogs,
-    },
-  };
+      },
+    };
+  } catch (error) {
+    console.error("Error fetching blog details:", error);
+    return { props: { blogs: null } };
+  }
 }
 
 export default BlogDetails;
