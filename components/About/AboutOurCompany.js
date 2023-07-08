@@ -11,7 +11,7 @@ const AboutOurCompany = () => {
         `${baseApiUrl}/api/about-our-company?populate=*`
       );
       setAboutInfo(response.data);
-      // console.log(response.data);
+      console.log(response.data);
     };
     getAboutInfo();
   }, []);

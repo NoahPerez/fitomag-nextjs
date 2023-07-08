@@ -10,7 +10,7 @@ const OurExpertise = () => {
         `${baseApiUrl}/api/our-expertise-style-2?populate=*`
       );
       setExpertise(response.data);
-      // console.log(response.data);
+       console.log(response.data);
     };
     getExpertise();
   }, []);
