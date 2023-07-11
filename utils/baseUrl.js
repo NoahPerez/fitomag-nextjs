@@ -1,6 +1,6 @@
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://site--strapi--6vkv6s4mwd2c.code.run"
+    ? "https://21416f71.fitomag-nextjs.pages.dev"
     : "http://localhost:3000";
 
 export default baseUrl;
