@@ -21,7 +21,7 @@
 
 const headers = {
   'Content-Type': 'application/json',
-  'Authorization': '482ce87af6a642776cb04b673dadc7a30120eace16e7b4f6d5221410a3e99de9bb31d3c461119458e9c0d7fec6d9333fbd534acdbb854e94e4d3b2ecbb7885f5f8425f4356d11d21ff8290572002929bd2b65ae58572b3d80753653348dfdf2760a681a0bdf9ba5b5908b270f58b14883d7fc8a787ccb3edffa5e98ae2a6fb35', // This is where the API key is used
+  'Authorization': '1604ebb038b4c193dd3d787e5a668143657b8edbe2df198d453f6c6e6fe31476dff5a92fdf70ca8d9ae629e5d6bf430539eb72b280ea7c1c6a35c2dd42282ddd1c661b378c68852ffbabf6739636b02153b8b4a64185d12273a6a3bde3ac7d0edff1e6b8d7b7b7607a4cc21104b843a0b8496cdd744d0e4edf70aad482c35327', // This is where the API key is used
 };
 
 // Make the API request using the configured headers
