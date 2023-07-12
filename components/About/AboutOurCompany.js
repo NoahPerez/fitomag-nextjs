@@ -8,7 +8,8 @@ const AboutOurCompany = () => {
   React.useEffect(() => {
     const getAboutInfo = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/about-our-company?populate=*`
+        `${baseApiUrl}/about-our-company?populate=*`
+        
       );
       setAboutInfo(response.data);
       console.log(response.data);
