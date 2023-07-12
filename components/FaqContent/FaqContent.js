@@ -14,7 +14,7 @@ const FaqContent = () => {
   const [faqs, setFaqs] = React.useState();
   React.useEffect(() => {
     const getFaqs = async () => {
-      const response = await axios.get(`${baseApiUrl}/api/faq?populate=*`);
+      const response = await axios.get(`${baseApiUrl}faq?populate=*`);
       setFaqs(response.data);
       // console.log(response.data);
     };

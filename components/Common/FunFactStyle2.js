@@ -6,7 +6,7 @@ const FunFactStyle2 = () => {
   const [funFacts, setFunFacts] = React.useState();
   React.useEffect(() => {
     const getFunFacts = async () => {
-      const response = await axios.get(`${baseApiUrl}/api/fun-fact?populate=*`);
+      const response = await axios.get(`${baseApiUrl}fun-fact?populate=*`);
       setFunFacts(response.data);
       // console.log(response.data);
     };

@@ -42,7 +42,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   try {
     const res = await fetch(
-      `${baseApiUrl}/api/blogs?filters[slug][$eq]=${params.slug}&populate=*`
+      `${baseApiUrl}blogs?filters[slug][$eq]=${params.slug}&populate=*`
     );
     const { data } = await res.json();
 

@@ -9,7 +9,7 @@ const TestimonialStyle1 = () => {
   React.useEffect(() => {
     const getTestimonials = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/testimonial?populate=testimonialItems.image`
+        `${baseApiUrl}testimonial?populate=testimonialItems.image`
       );
       setTestimonials(response.data);
       // console.log(response.data);

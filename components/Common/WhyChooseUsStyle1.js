@@ -7,7 +7,7 @@ const WhyChooseUsStyle1 = () => {
   React.useEffect(() => {
     const getwhyChooseUs = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/why-choose-us?populate=*`
+        `${baseApiUrl}why-choose-us?populate=*`
       );
       setwhyChooseUs(response.data);
       // console.log(response.data);

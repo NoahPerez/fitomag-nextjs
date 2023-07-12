@@ -39,7 +39,7 @@ export async function getStaticProps({ params }) {
   // Call an external API endpoint to get products.
   // You can use any data fetching library
   const res = await fetch(
-    `${baseApiUrl}/api/case-studies?filters[slug][$eq]=${params.slug}&populate=*`
+    `${baseApiUrl}case-studies?filters[slug][$eq]=${params.slug}&populate=*`
   );
   const caseStudie = await res.json();
   // By returning { props: { caseStudie } }, the Blog component

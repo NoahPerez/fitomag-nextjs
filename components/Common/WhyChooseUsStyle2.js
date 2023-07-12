@@ -13,7 +13,7 @@ const WhyChooseUsStyle2 = () => {
   React.useEffect(() => {
     const getChooseUs = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/why-choose-us-style-2?populate=*`
+        `${baseApiUrl}why-choose-us-style-2?populate=*`
       );
       setChooseUs(response.data);
       // console.log(response.data);

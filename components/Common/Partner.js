@@ -7,7 +7,7 @@ const Partner = () => {
   const [partner, setPartner] = React.useState();
   React.useEffect(() => {
     const getPartner = async () => {
-      const response = await axios.get(`${baseApiUrl}/api/partner?populate=item.image`);
+      const response = await axios.get(`${baseApiUrl}partner?populate=item.image`);
       setPartner(response.data);
       // console.log(response.data);
     };
