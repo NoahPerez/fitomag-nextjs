@@ -7,7 +7,7 @@ const TeamMember = () => {
   React.useEffect(() => {
     const getTeam = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/our-expert-team?populate=teamMember.image`
+        `${baseApiUrl}/our-expert-team?populate=teamMember.image`
       );
       setTeam(response.data);
       // console.log(response.data);
