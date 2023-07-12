@@ -7,7 +7,7 @@ const OurExpertise = () => {
   React.useEffect(() => {
     const getExpertise = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/our-expertise-style-3?populate=*`
+        `${baseApiUrl}our-expertise-style-3?populate=*`
       );
       setExpertise(response.data);
       // console.log(response.data);

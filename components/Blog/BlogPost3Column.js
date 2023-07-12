@@ -7,7 +7,7 @@ const BlogPost3Column = () => {
   const [blogs, setBlogs] = React.useState();
   React.useEffect(() => {
     const getBlogs = async () => {
-      const response = await axios.get(`${baseApiUrl}/api/blogs?populate=*`);
+      const response = await axios.get(`${baseApiUrl}blogs?populate=*`);
       setBlogs(response.data);
       // console.log(response.data);
     };

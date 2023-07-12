@@ -9,7 +9,7 @@ const Footer = () => {
   React.useEffect(() => {
     const getLogo = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/site-logo?populate=*`
+        `${baseApiUrl}site-logo?populate=*`
       );
       setLogo(response.data);
       // console.log(response.data);

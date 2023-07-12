@@ -6,7 +6,7 @@ const WorkingProcess = () => {
   const [wProcess, setWProcess] = React.useState();
   React.useEffect(() => {
     const getWProcess = async () => {
-      const response = await axios.get(`${baseApiUrl}/api/working-process?populate=*`);
+      const response = await axios.get(`${baseApiUrl}working-process?populate=*`);
       setWProcess(response.data);
       // console.log(response.data);
     };

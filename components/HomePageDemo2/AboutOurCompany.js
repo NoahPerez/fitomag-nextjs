@@ -9,7 +9,7 @@ const AboutOurCompany = () => {
   React.useEffect(() => {
     const getAboutCompany = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/about-our-company-style-2?populate=*`
+        `${baseApiUrl}about-our-company-style-2?populate=*`
       );
       setAboutCompany(response.data);
       // console.log(response.data);

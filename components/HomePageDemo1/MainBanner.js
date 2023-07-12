@@ -11,7 +11,7 @@ const MainBanner = () => {
   React.useEffect(() => {
     const getBanner = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/home-banner1?populate=slideImage.img`
+        `${baseApiUrl}home-banner1?populate=slideImage.img`
       );
       setBanner(response.data);
       // console.log(response.data);

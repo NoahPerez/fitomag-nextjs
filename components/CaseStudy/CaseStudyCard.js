@@ -8,7 +8,7 @@ const CaseStudyCard = () => {
   React.useEffect(() => {
     const getCaseStudies = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/case-studies?populate=*`
+        `${baseApiUrl}case-studies?populate=*`
       );
       setCaseStudies(response.data);
       // console.log(response.data);

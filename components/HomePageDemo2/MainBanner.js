@@ -8,7 +8,7 @@ const MainBanner = () => {
   React.useEffect(() => {
     const getBanner = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/home-banner-2?populate=*`
+        `${baseApiUrl}home-banner-2?populate=*`
       );
       setBanner(response.data);
       // console.log(response.data);

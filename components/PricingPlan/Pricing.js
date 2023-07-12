@@ -8,7 +8,7 @@ const Pricing = () => {
   React.useEffect(() => {
     const getPricing = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/our-pricing?populate=priceCard.priceList`
+        `${baseApiUrl}our-pricing?populate=priceCard.priceList`
       );
       setPricing(response.data);
       // console.log(response.data);

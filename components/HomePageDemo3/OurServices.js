@@ -8,7 +8,7 @@ const OurServices = () => {
   React.useEffect(() => {
     const getServices = async () => {
       const response = await axios.get(
-        `${baseApiUrl}/api/services?populate=*`
+        `${baseApiUrl}services?populate=*`
       );
       setServices(response.data);
       // console.log(response.data);
