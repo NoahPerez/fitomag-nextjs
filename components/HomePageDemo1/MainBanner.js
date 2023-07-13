@@ -2,7 +2,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import Link from "next/link";
-import axios from "axios";
+import axios from "pages/api/api.js"
 import baseApiUrl from "@/utils/baseApiUrl";
 import 'swiper/css';
 

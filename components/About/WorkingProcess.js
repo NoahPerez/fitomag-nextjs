@@ -1,5 +1,5 @@
 import React from "react";
-import axios from "axios";
+import axios from "pages/api/api.js"
 import baseApiUrl from "@/utils/baseApiUrl";
 
 const WorkingProcess = () => {
