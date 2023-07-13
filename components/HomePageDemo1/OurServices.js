@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import axios from "axios";
+import axios from "pages/api/api.js"
 import baseApiUrl from "@/utils/baseApiUrl";
 
 const OurServices = () => {
