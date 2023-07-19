@@ -17,19 +17,19 @@
 // }
 
 
-import axios from 'axios';
+// import axios from 'axios';
 
-export async function fetcher(url, options = {}) {
-  try {
-    const response = await axios(url, options);
-    const data = response.data;
-    return data;
-  } catch (error) {
-    // Handle error
-    console.error('Request failed:', error.message);
-    throw error;
-  }
-}
+// export async function fetcher(url, options = {}) {
+//   try {
+//     const response = await axios(url, options);
+//     const data = response.data;
+//     return data;
+//   } catch (error) {
+//     // Handle error
+//     console.error('Request failed:', error.message);
+//     throw error;
+//   }
+// }
 
 // const headers = {
 //   'Content-Type': 'application/json',
